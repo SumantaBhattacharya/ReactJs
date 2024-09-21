@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Neue Montreal';
+    src: url('/Fonts/FoundersGrotesk-Semibold.woff') format('woff'); /* Update to .woff */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+    padding: 0.1vw;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+  .masker h1 {
+    font-family: 'Neue Montreal', sans-serif; /* Apply the font specifically to h1 */
+  }
+  
+  .CiLocationArrow1{
+    color: white;
+    fill: white;
+  }
+
+  .marque{
+    font-family: 'Neue Montreal', sans-serif;
+  }
+
+  .About{
+    font-family: 'Neue Montreal', sans-serif;
+  }
+
+  .Features{
+    font-family: 'Neue Montreal', sans-serif;
+  }
+
+  /* Landing.css or App.css */
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .scroll-container {
+    padding: 10px;
+    font-size: 14px;
+    /* Other mobile-specific adjustments */
+  }
+  
+  .Landing {
+    padding: 20px;
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+  
+  .About {
+    padding: 15px;
+    font-size: 13px; /* Adjusted for mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  /* Desktop styles */
+  .scroll-container {
+    padding: 30px;
+    font-size: 18px;
+    /* Desktop-specific adjustments */
+  }
+
+  .Landing {
+    padding: 50px;
+    font-size: 18px; /* Larger font for desktop */
+  }
+  
+  .About {
+    padding: 40px;
+    font-size: 16px; /* Adjusted for desktop */
+  }
+}
+
+  
+

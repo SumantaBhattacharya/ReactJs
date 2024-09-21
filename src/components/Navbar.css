@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/Fonts/NeueMontreal-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.Navbar {
+    font-family: 'Neue Montreal', sans-serif;
+}
+
+.Navbar .logo svg {
+    color: white;
+  }
+  
+.Navbar .link a {
+    color: white;
+    font-weight: 400;
+}
+
+.line{
+  font-family: 'Neue Montreal', sans-serif;
+}
+  
