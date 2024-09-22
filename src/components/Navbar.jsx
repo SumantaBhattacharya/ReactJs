@@ -5,7 +5,6 @@ const Navbar = () => {
   return (
     <div className="Navbar  fixed z-[99] w-full px-20 py-8 flex align-middle items-center justify-between bg-transparent ">
       <div className="logo" >
-        {" "}
         {/* Set the color explicitly */}
         <svg
           width="72"

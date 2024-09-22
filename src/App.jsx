@@ -9,6 +9,7 @@ import About from "./components/About";
 import Eyes from "./components/Eyes";
 import Features from "./components/Features";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 function App() {
   // Reference to the scroll container
@@ -35,9 +36,12 @@ function App() {
 
   return (
     <>
-      <div data-scroll-container ref={scrollRef} className="w-full min-h-screen bg-zinc-900">
-
-          <Navbar />
+      <div
+        data-scroll-container
+        ref={scrollRef}
+        className="w-full min-h-screen bg-zinc-900"
+      >
+        <Navbar />
 
         <div data-scroll-section>
           <Landing />
@@ -56,6 +60,9 @@ function App() {
         </div>
         <div data-scroll-section>
           <Cards />
+        </div>
+        <div data-scroll-section>
+          <Footer />
         </div>
       </div>
     </>

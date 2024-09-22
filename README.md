@@ -7,17 +7,77 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-navbar
-landing page
-marque
-about
-playful
-cards
-cards
-readt to start
-footer
-loader
+# [***ReactJS | Modern Animated Website | OCHI DESIGN | Awwwarded Website Clone***](https://youtu.be/AZXYSlxj0vU?si=XfahCFcdAW0GbAbn)
 
+[![ReactJS | Modern Animated Website | OCHI DESIGN | Awwwarded Website Clone](https://img.youtube.com/vi/AZXYSlxj0vU/hqdefault.jpg)](https://youtu.be/AZXYSlxj0vU?si=XfahCFcdAW0GbAbn)
+
+# ***list of topics:***
+
+- *Creating a modern animated website using ReactJS*
+- *Installing dependencies and setting up Tailwind CSS for the website*
+- *Setting up ReactJS app and installing extensions for development*
+- *Creating a modern animated website with different sections*
+- *Introduction to creating and importing React components*
+- *Changing the color of the navigation bar to white*
+- *Fetching a font from a website for installation*
+- *Selecting and using fonts in ReactJS*
+- *Fix navigation bar and ensure z-index for visibility*
+- *Creating and styling text structure of the website*
+- *Customizing text appearance in the website design*
+- *Creating and customizing masks in ReactJS*
+- *Styling the website elements with CSS*
+- *Creating and using icons in ReactJS*
+- *Installation process for ReactJS on Windows and Mac*
+- *Styling elements and managing layout*
+- *Adjusting rounded curved angles and values for proper display*
+- *Creating a rough sea effect with green section*
+- *Styling adjustments and animations discussed*
+- *Implementing rounded corners and animation in the website design*
+- *Development process of creating a modern animated website*
+- *Creating a modern animated website using ReactJS*
+- *Creating and customizing design elements in the website using ReactJS*
+- *Fixing the bottom line on the website*
+- *Creating and styling elements using ReactJS*
+- *Creating and customizing website design elements*
+- *Discussing design elements and color choices*
+- *Adjusting elements for the layout*
+- *Learn how to create a rotating circle with transparency*
+- *Explanation of finding the angle and point on the screen*
+- *Using radians to calculate degrees and extracting mouse location for website interaction*
+- *Understanding mouse position and delta in ReactJS*
+- *Learn how to rotate elements using ReactJS*
+- *Creating and styling website components with ReactJS*
+- *Creating card div and setting dimensions*
+- *Creating card structures and applying CSS*
+- *Customizing website colors and image shapes*
+- *Positioning and styling elements using ReactJS*
+- *Adjusting colors and elements on the website*
+- *Creating animated website using ReactJS*
+- *Discussing layout configurations and styling elements*
+- *Creating and styling a logo and button in the website design*
+- *Code corrections and styling enhancements*
+- *Discussing the CSS properties flex, justify, height, and presentation*
+- *Installing and using locomotive for smooth scrolling website*
+- *Using ReactJS to create animated website*
+- *Troubleshooting and fixing an error during application runtime*
+- *Controlling scroll speed and creating a dynamic effect*
+- *Styling and animating elements using inline-block and flex*
+- *Creating hover animation using ReactJS*
+- *Discussing styling and DOM manipulation in ReactJS*
+- *Using motion and animation in ReactJS*
+- *Demonstrating animation with Frame Motion*
+
+# ***SECTIONS***
+- *Navbar*
+- *Landing Page*
+- *Marque*
+- *About*
+- *Playful*
+- *Cards*
+- *Cards* (duplicate)
+- *Ready to Start*
+- *Footer*
+- *Loader*
 
 # ***BEFORE***
 ```jsx
@@ -162,7 +222,7 @@ useEffect(() => {
     };
   }, []);
 ```
-```
+```jsx
 <h1 className="absolute uppercase right-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 w-fit text-[#CDEA69] leading-none tracking-wide z-20 text-[6.4vw] whitespace-nowrap">
   {['A', 'H', '2', ' ', '&', ' ', 'M', 'a', 't', 't', ' ', 'H', 'o', 'r', 'n'].map((item, idx) => (
     <span key={idx}>
@@ -171,4 +231,38 @@ useEffect(() => {
   ))}
 </h1>
 
+```
+
+```bash
+npm i framer-motion
+npm i gsap
+```
+
+https://easings.net/
+
+```
+<div onMouseEnter={()=> setIsHovered(true)} onMouseLeave={()=> setIsHovered(false)} className="card-container relative w-1/2 h-[70vh]">
+{[
+                "A",
+                "H",
+                "2",
+                " ",
+                "&",
+                " ",
+                "M",
+                "a",
+                "t",
+                "t",
+                " ",
+                "H",
+                "o",
+                "r",
+                "n",
+              ].map((item, idx) => (
+                <motion.span 
+                initial={{y:"100%"}} animate={isHovered ? ({y:"0"}) : ({y:"100%"})} transition={{ease: [0.83, 0, 0.17, 1], delay: idx * 0.1 }}
+                key={idx} className="inline-block">
+                  {item}
+                </motion.span>
+              ))}
 ```

@@ -2,8 +2,10 @@ import React from "react";
 import "./landing.css";
 import "./Navbar.css";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const Landing = () => {
+
   return (
     <div className="Landing font-['Neue Montreal', sans-serif'] w-full h-screen bg-zinc-900 text-[#D3CFCA] pt-1 relative">
       <div className="masker mt-52 px-20">
@@ -12,7 +14,9 @@ const Landing = () => {
             <div className=" w-fit flex items-center overflow-hidden relative">
                {/* Conditionally render the red div for the second item */}
                {idx === 1 && (
-                <div className="w-[9.1vw] mr-[1vw] rounded-lg h-[5.7vw] relative top-[0.5vw] bg-green-500 mr-4"></div>
+                <motion.div initial={{width:0}} animate={{width:"9.1vw"}} transition={{ease: [0.76, 0, 0.24, 1], duration: 1}} className="w-[9.1vw] mb-[0.2vw] flex justify-center align-middle mr-[1vw] rounded-lg h-[5.7vw] relative top-[0.5vw] overflow-hidden mr-4">
+                  <img className="bg-cover bg-no-repeat rounded-[0.6vw] h-[5.5vw] w-[16vw] " src="/images/image.png" alt="Description of Image" />
+                </motion.div>
               )}
               <h1
                 key={idx}
@@ -66,4 +70,6 @@ home
 about me 
 Insights where i will should the code of the page 
 contacts
+
+https://easings.net/
 */

@@ -3,7 +3,7 @@ import "./Landing.css";
 
 const About = () => {
   return (
-    <div className="About h-full py-20 bg-[#57660E] rounded-tr-[1vw] rounded-tl-[1vw] rounded-bl-[1vw] rounded-br-[1vw] ">
+    <div  data-scroll data-scroll-speed="-1.8"  className="About z-[99px] h-full py-20 bg-[#57660E] rounded-tr-[1vw] rounded-tl-[1vw] rounded-bl-[1vw] rounded-br-[1vw] ">
       <div className="flex justify-start w-[80vw]">
         <p className="text-left text-[#D3CFCA] text-[4vw] leading-[3.1vw] tracking-normal ml-[2vw] ">
           Ochi is a strategic presentation agency for forward-thinking

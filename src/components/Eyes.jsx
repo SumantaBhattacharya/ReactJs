@@ -27,8 +27,8 @@ const Eyes = () => {
   }, []); // Empty dependency array ensures it runs only once (on mount and unmount)
 
   return (
-    <div className="eyes w-full h-screen overflow-hidden rounded-t-[2vw]">
-      <div className='relative w-full h-full bg-[url("/images/Top-Viewbbcbv-1-scaled.jpg")] bg-cover bg-center'>
+    <div className="eyes w-full h-screen overflow-hidden -z-[10px] rounded-t-[2vw]">
+      <div data-scroll data-scroll-speed="-.2" className='relative w-full h-full bg-[url("/images/Top-Viewbbcbv-1-scaled.jpg")] bg-cover bg-center'>
         <div className="absolute top-1/3 left-1/2 -translate-x-[50%] -translate-y-[50%] w-1/3 ">
           <div className="flex items-center justify-between">
             <div className="w-[13vw] relative flex items-center justify-center rounded-full h-[13vw] bg-white">
